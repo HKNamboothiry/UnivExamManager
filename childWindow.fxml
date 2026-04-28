@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TabPane layoutY="32.0" prefHeight="368.0" prefWidth="640.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0">
+              <tabs>
+                <Tab text="Faculties">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ButtonBar prefHeight="40.0" prefWidth="629.0">
+                                <buttons>
+                                  <Button mnemonicParsing="false" text="Insert from Previous Exam" />
+                                    <Button mnemonicParsing="false" prefHeight="21.0" text="Insert from CSV" />
+                                </buttons>
+                              </ButtonBar>
+                              <TableView layoutX="18.0" layoutY="34.0" prefHeight="337.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="34.0">
+                                <columns>
+                                  <TableColumn prefWidth="213.99996948242188" text="Faculty Name" />
+                                  <TableColumn minWidth="1.333343505859375" prefWidth="96.0" text="Department" />
+                                    <TableColumn prefWidth="97.33331298828125" text="Seniority" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Students">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ButtonBar prefHeight="40.0" prefWidth="640.0">
+                                 <buttons>
+                                    <Button mnemonicParsing="false" text="Insert from Previous Exam" />
+                                    <Button mnemonicParsing="false" prefHeight="21.0" text="Insert from CSV" />
+                                 </buttons>
+                              </ButtonBar>
+                              <TableView layoutX="18.0" layoutY="39.333333333333336" prefHeight="332.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="39.0">
+                                 <columns>
+                                    <TableColumn prefWidth="167.99996948242188" text="Registration Number" />
+                                    <TableColumn minWidth="1.333343505859375" prefWidth="142.0" text="Department" />
+                                    <TableColumn prefWidth="104.00006103515625" text="Programme" />
+                                    <TableColumn prefWidth="104.00006103515625" text="Year of Admission" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Rooms">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView layoutX="18.0" layoutY="39.333333333333336" prefHeight="332.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="39.0">
+                                 <columns>
+                                    <TableColumn minWidth="2.0" prefWidth="92.0" text="Room No" />
+                                    <TableColumn minWidth="1.333343505859375" prefWidth="78.6666259765625" text="Rows" />
+                                    <TableColumn prefWidth="104.0" text="Columns" />
+                                    <TableColumn prefWidth="144.0" text="Candidates Per Bench" />
+                                    <TableColumn prefWidth="140.0" text="Invigilators Required" />
+                                 </columns>
+                              </TableView>
+                              <ButtonBar prefHeight="40.0" prefWidth="640.0">
+                                 <buttons>
+                                    <Button mnemonicParsing="false" text="Insert from Previous Exam" />
+                                    <Button mnemonicParsing="false" prefHeight="21.0" text="Insert from CSV" />
+                                 </buttons>
+                              </ButtonBar>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Allocation">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ButtonBar prefHeight="40.0" prefWidth="627.0">
+                                 <buttons>
+                                    <Button mnemonicParsing="false" text="Perform Allocations" />
+                                 </buttons>
+                              </ButtonBar>
+                              <ListView layoutX="12.0" layoutY="40.0" prefHeight="317.0" prefWidth="615.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="160.0" text="Examination Code" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
