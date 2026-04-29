@@ -21,9 +21,10 @@ S2UG2026| Second Semester Bachelors Degree Examination 2026 | 29-04-2026 | 13-05
 103 | 12 |3 |2|2|
 
 ### Student Data
-| Candidate Code | Year of Admission (Automatically filled) | Program (Automatically Filled) | Roll Number (Automatically Filled) |
-|------|------|------|-----|
-23019125007 | 2019 | 230 | 007 |
+| Candidate Code | Year of Admission (Automatically filled) | Program (Automatically Filled) | Roll Number (Automatically Filled) | Subject Codes of Attempting Exams |
+|------|------|------|-----|----|
+|23019125007 | 2019 | 230 | 007 | PH113 PH114 PH112|
+|23018124007 | 2018 |230|007 | All |
 
 ### Faculty Data
 | Faculty Name | Department | Rank (0-4) | Duty Time |
